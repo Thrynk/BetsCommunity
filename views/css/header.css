@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+}
+.main_block{
+  display: flex;
+  justify-content: space-around;
+}
+
+header {
+  overflow: hidden;
+  background: #42A5F5;
+  padding: 20px 10px;
+}
+
+.linkbutton{
+  text-decoration: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+header .logo {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 25px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ballon{
+
+}
+.forphone{
+  display: none;
+}
+#signin, #signup{
+  display: none;
+}
+
+header .logo:hover {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  header .logo {
+    float: right;
+    display: block;
+    text-align: left;
+  }
+
+  .bienvenue{
+    display: none;
+  }
+
+  .forphone{
+    display: block;
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .forphone a{
+    text-decoration: none;
+    font-weight: normal;
+    color: black;
+  }
+
+  #signin, #signup{
+    display: block;
+    width:auto;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .connexionbutton{
+    display: none;
+  }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.menu {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sous_menu {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover, .menu a:focus {
+    color: #f1f1f1;
+}
+
+.menu .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .menu a {font-size: 20px}
+  .menu .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}

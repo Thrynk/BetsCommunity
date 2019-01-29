@@ -1,0 +1,111 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    table-layout: fixed;
+}
+td, th {
+    border: 1px solid black;
+    border-color: rgba(200,200,200,0.3);
+    text-align: center;
+    padding: 8px;
+}
+.name{
+  word-break: break-all;
+}
+.scoreexact{
+  margin-top: 10px;
+}
+.ligue {
+  width: 100%;
+}
+th[colspan]{
+  background-color: #cccccc;
+}
+thead tr {
+  background-color: #dddddd
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+img{
+  width : 20px;
+  height: auto;
+}
+
+.choix{
+  min-width: 130px;
+}
+
+/* MATCH PARIS */
+input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+input[type=radio] + label:before {
+    background-color : white;
+    border: 2px solid #ccc;
+    text-align: center;
+    margin-top: -3px;
+    margin-right: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 320px){
+  input[type=radio] + label:before, input[type=text] {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20px;
+    height: 20px;
+  }
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+input[type=radio]:checked + label:before {
+    background: #fb8819;
+    border-color: #fb8819;
+}
+.bouton_1 + label:before {
+  content: '1';
+}
+.bouton_2 + label:before {
+  content: 'N';
+}
+.bouton_3 + label:before {
+  content: '2';
+}
+label{
+    cursor:pointer;
+}
+.score {
+  width : 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tablink {
+    background-color: #555;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    font-size: 13px;
+    width: 50%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    height: 100%;
+}
